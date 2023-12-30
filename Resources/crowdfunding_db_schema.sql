@@ -1,5 +1,14 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+﻿CREATE DATABASE crowdfunding_db
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+DROP TABLE IF EXISTS Campaign;
+DROP TABLE IF EXISTS Category;
+DROP TABLE IF EXISTS Subcategory;
+DROP TABLE IF EXISTS Contacts;
 
 
 CREATE TABLE "campaign" (
